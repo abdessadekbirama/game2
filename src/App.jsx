@@ -24,9 +24,9 @@ const App = () => {
       {!playing ? (
         <div className="relative text-center space-y-8 max-w-md">
           <div className="space-y-4">
-            <div className="text-6xl animate-bounce">🧩</div>
+            <img className="size-32 block m-auto animate-bounce" src="brain.png"/>
             <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              Puzzle Game
+              Memory Game
             </h1>
             <p className="text-gray-400 text-lg">
               Challenge your mind with this classic puzzle game
@@ -84,7 +84,7 @@ const App = () => {
 
             <div className="text-center">
               <h2 className="text-2xl font-bold text-white">
-               Puzzle Game
+               Memory Game
               </h2>
             </div>
             <div className="w-20"></div>
