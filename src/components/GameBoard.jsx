@@ -87,7 +87,9 @@ const GameBoard = ({ size }) => {
       <div className="text-center mt-4 text-xl font-bold text-[#58fa27]">
         Time: {Math.floor(seconds / 60)}:{String(seconds % 60).padStart(2, "0")}
       </div>
-      <div className={`grid mx-auto mt-10 ${"grid-cols-" + size} gap-4`}>
+      <div className={`grid mx-auto mt-10 gap-4 grid-cols-4`}
+      style={{gridTemplateColumns: `repeat(${size}, minmax(0, 1fr))`}}
+      >
         {cards.map((card) => (
           <Card
             key={card.key}
