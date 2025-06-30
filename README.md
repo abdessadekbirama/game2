@@ -1,50 +1,52 @@
-# React + TypeScript + Vite
+# 🧩 Memory Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A smooth and responsive sliding puzzle game built with **React** and **Tailwind CSS**.  
+Test your logic and enjoy solving puzzles using randomly chosen images!
 
-Currently, two official plugins are available:
+![screenshot](public/images/screen1.png)
+![screenshot](public/images/screen2.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🚀 Live Demo
 
-- Configure the top-level `parserOptions` property like this:
+🔗 [Play the game](https://puzzle-game-2.vercel.app/)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🎮 Features
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- ✅ Random image selected from `/public/images/` on each game
+- ✅ Smooth sliding animation using Tailwind transitions
+- ✅ Win detection and celebration message
+- ✅ Empty tile is filled with the correct image piece after winning
+- ✅ Fully responsive design (desktop & mobile)
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+---
+
+## 🛠️ Tech Stack
+
+- **React**
+- **Vite**
+- **Tailwind CSS**
+- **JavaScript (ES6)**
+
+---
+
+## 📦 Installation
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/abdessadekbirama/game2.git
+   cd game2
+2. **Install dependencies**
+   ```bash
+   npm install
+3. **Run locally**
+   ```bash
+   npm run dev
+3. **Open Browser**
+   ```bash
+   http://localhost:5173
+
